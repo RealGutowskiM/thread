@@ -1,0 +1,33 @@
+{
+  "name": "thread",
+  "version": "1.0.0",
+  "description": "",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "targets": {
+    "server": {
+      "source": "./server/index.ts",
+      "context": "node",
+      "engines": {
+        "node": ">= 17"
+      }
+    },
+    "client": {
+      "source": "./client/index.html",
+      "context": "browser",
+      "engines": {
+        "browsers": "> 0.5%, last 2 versions, not dead"
+      }
+    }
+  },
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "2.0.1",
+    "tslib": "2.3.1"
+  }
+}
